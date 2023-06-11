@@ -1,0 +1,137 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 5px 5px;
+  outline: groove 5px black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+}
+
+.todo-actions {
+  margin-left: auto;
+}
+
+.todo-actions button {
+  margin-left: 5px;
+}
+
+.todo-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.todo-form input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.todo-form button {
+  margin-left: 10px;
+}
+
+.input-todo {
+  background-color: aqua;
+  font-size: 1.5rem;
+  outline: solid 1px black;
+  box-shadow: 3px 3px 5px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.add-todo {
+  font-size: 1.5rem;
+  margin-left: 25px;
+  outline: solid 1px black;
+  background-color: yellow;
+  padding: 1px 20px;
+  box-shadow: 3px 3px 5px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.add-todo:hover {
+  background-color: rgb(0, 255, 34);
+}
+
+.todo-title {
+  color: yellow;
+}
+
+.edit {
+  margin-right: 10px;
+  color: blue;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.delete {
+  margin-right: 10px;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.save {
+  color: rgb(0, 228, 11);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* ***********************************************responsive############################################### */
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .todo-list {
+    margin-top: 10px;
+  }
+
+  .todo-item {
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+
+  .todo-text {
+    flex-basis: 100%;
+    margin-top: 5px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .todo-form input[type="text"] {
+    margin-bottom: 5px;
+  }
+  .add-todo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
