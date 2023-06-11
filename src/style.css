@@ -1,7 +1,12 @@
+body {
+  padding: 20px;
+  background-color: rgb(77, 249, 255);
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
   box-shadow: 10px 10px 10px black;
   border-radius: 5px 5px;
   outline: groove 5px black;
@@ -100,8 +105,7 @@ h1 {
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .container {
-    max-width: 100%;
-    padding: 10px;
+    max-width: 80%;
   }
 
   h1 {
@@ -129,6 +133,9 @@ h1 {
 
   .todo-form input[type="text"] {
     margin-bottom: 5px;
+  }
+  .input-todo {
+    max-width: 80%;
   }
   .add-todo {
     margin-left: 0;
